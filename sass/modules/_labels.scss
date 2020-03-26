@@ -1,0 +1,17 @@
+.label{
+	display: inline-block;
+	background: $blue;
+	color: #FFF;
+	border-radius: 4px;
+	font-size: 11px;
+	line-height: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	white-space: nowrap;
+	padding: 5px 10px;
+
+	&--orange{
+		background: $orange;
+	}
+}

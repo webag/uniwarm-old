@@ -1,0 +1,153 @@
+.calc{
+	display: flex;
+	box-shadow: $shadow-big;
+	background: #FFF;
+	border-radius: 5px;
+	@include res(m){
+		flex-wrap: wrap;
+	}
+}
+
+.calc__left{
+	background: #000;
+	background: linear-gradient(180deg, #0066D0 -12.69%, #0036A3 181.92%);
+	width: 360px;
+	flex-shrink: 0;
+	border-radius: 5px;
+	padding: 20px 30px;
+	color: #FFF;
+	@include res(l){
+		width: 310px;
+		padding: 20px 15px;
+	}
+	@include res(m){
+		width: 100%;
+		order: 2;
+	}
+
+	.input-text{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.btn{
+		width: 100%;
+	}
+
+	.form-note{
+		color: #FFF;
+
+		a{
+			color: #97C3F1;
+			&:hover{
+				color: $orange;
+			}
+		}
+	}
+}
+
+.calc-result{
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid rgba(#FFF,0.1)
+}
+
+.calc-result__title{
+	margin-bottom: 10px;
+}
+
+.calc-form-title{
+	margin-bottom: 10px;
+}
+
+.calc__right{
+	padding: 25px 40px;
+	flex: 1;
+	@include res(l){
+		padding: 25px 20px;
+	}
+	@include res(xs){
+		padding: 15px;
+	}
+}
+
+.calc__step{
+	width: 100%;
+	padding: 15px 0;
+	border-bottom: 1px solid #E6E6E6;
+
+	&:last-child{
+		border: none;
+	}
+
+	.lead{
+		margin-bottom: 10px;
+	}
+}
+
+.calc__radios{
+	.style-radio-btn{
+		margin: 0 10px 5px 0;
+	}
+}
+
+
+//irs
+.irs-line {
+	height: 4px;
+	border: none;
+	border-radius: 5px;
+}
+
+.irs-line-left, .irs-line-mid, .irs-line-right {
+	display: none;
+}
+
+.irs-bar {
+	height: 4px;
+	background: $blue;
+	border: none;
+}
+
+.irs-bar-edge {
+	height: 4px;
+	background: $blue;
+	border: none;
+}
+
+.irs-min, .irs-max {
+	//color: #FFF;
+	font-size: 16px;
+	background: none;
+	padding: 0;
+}
+
+.irs-single {
+	color: $blue-text;
+	background: none;
+	font-size: 16px;
+	line-height: 1;
+}
+
+.irs-slider {
+	background: #FFF;
+	box-shadow: 0 2px 5px rgba(#000,0.2);
+	border: none;
+	top: 24px;
+	height: 21px;
+	width: 21px;
+	transition: background 0.15s ease;
+
+	&:hover,&.state_hover{
+		background: $blue;
+	}
+}
+
+.irs-grid-pol.small{
+	display: none;
+}
+
+.irs-grid-text{
+	font-size: 13px;
+}
+//irs

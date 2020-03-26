@@ -1,0 +1,29 @@
+$container_width: 1236px;
+$gutter: 12px;
+
+$breakpoints: (
+	'xxl': (max-width: 1680px),
+	'xl': (max-width: 1400px),
+	'c': (max-width: $container_width),
+	'l': (max-width: 1024px),
+	'm': (max-width: 768px),
+	's': (max-width: 680px),
+	'xs': (max-width: 480px),
+	'xxs': (max-width: 375px),
+);
+
+$font: 'Ubuntu', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+
+
+$black: #1B1B1B;
+$blue: #2B75D2;
+$blue-text: #003399;
+$orange: #FA6655;
+$gray-text: #797979;
+$gray-border: #dfdfdf;
+$gray-border-dark: #979797;
+$gray-bg: #E9EEF4;
+$light-blue-bg: #F5F9FF;
+
+$shadow-big: 0 20px 25px rgba(0, 0, 0, 0.1);
+$shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.1);

@@ -1,0 +1,66 @@
+.s-order{
+	background-color: $blue;
+	background-size: cover;
+	background-position: center center;
+	@include res(xs){
+		background: $blue !important;
+	}
+}
+
+.order-block{
+	background: #FFF;
+	border-radius: 10px;
+	padding: 45px;
+	box-shadow: $shadow-big;
+	@include res(m){
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@include res(xs){
+		padding: 25px;
+	}
+}
+
+.order-block__title{
+	text-align: center;
+	margin-bottom: 0.3em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.order-block__descr{
+	text-align: center;
+	margin-bottom: 35px;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	@include res(xs){
+		margin-bottom: 20px;
+	}
+}
+
+.order-block__form{
+	max-width: 990px;
+	margin-left: auto;
+	margin-right: auto;
+	@include res(m){
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.input-text{
+		display: block;
+		width: 100%;
+		@include res(m){
+			margin-bottom: 10px;
+		}
+	}
+
+	.btn{
+		width: 100%;
+		@include res(m){
+			margin-top: 10px;
+		}
+	}
+}

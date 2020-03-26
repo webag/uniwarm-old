@@ -1,0 +1,50 @@
+.s-logos-slider{
+	border-top: 1px solid $gray-bg;
+	border-bottom: 1px solid $gray-bg;
+	display: flex;
+	overflow: hidden;
+
+	&.flickity-enabled{
+		display: block;
+		overflow: visible;
+	}
+}
+
+.logos-slider__item{
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 190px;
+	width: calc(100% / 8);
+	padding: 10px;
+	@include res(xl){
+		width: calc(100% / 8);
+		height: 150px;
+	}
+	@include res(l){
+		height: 100px;
+	}
+	@include res(m){
+		width: calc(100% / 6);
+		height: 75px;
+	}
+	@include res(s){
+		width: calc(100% / 4);
+		padding: 0;
+	}
+	@include res(xs){
+		width: calc(100% / 3);
+	}
+
+	img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		@include res(l){
+			width: 95px;
+		}
+	}
+}
